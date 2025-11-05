@@ -3,11 +3,11 @@ let currentInput = ""
 let currentOperator = ""
 
 function appendNumber(value){
-    currentInput = value + currentInput
+    currentInput += value
     display.textContent = currentInput
 }
     function appendOperator(operator){
-         if(currentInput === "" && oparator !== ".") return
+         if(currentInput === "" && operator !== ".") return
          currentInput += operator;
          display .textContent = currentInput;
     }
